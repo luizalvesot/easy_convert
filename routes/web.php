@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\Awesome\AwesomeController;
 use Illuminate\Support\Facades\Route;
+
+Route::get('retorna-moedas/{moedas}', [AwesomeController::class, 'retornaMoedas'])->name('retornaMoedas');
 
 Route::get('/', function () {
     return view('welcome');
