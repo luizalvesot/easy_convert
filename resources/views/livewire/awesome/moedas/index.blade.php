@@ -3,13 +3,10 @@
             <div class="pb-4 full-height" style="background-color: rgb(34, 34, 34); width: 220px;">
                 <ul class="nav flex-column nav-pills">
                     <li class="nav-item">
-                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab1">Dóllar | Real</button>
+                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab1">Conversor</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab2">Euro | Real</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab2">Bitcoin | Real</button>
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab2">Análises</button>
                     </li>
                 </ul>
             </div>
@@ -45,14 +42,17 @@
                             </div>
                         </div>
                     </div>  
+                    <div class="row justify-content-center">
+                       <div class="col-md-9 my-2">
+                            <div class="alert alert-info">
+                                Altere o valor de um dos campos para calcular o que deseja. Após digitar, pressione ENTER para calcular.
+                            </div>
+                       </div>
+                    </div>
                 </div>
                 
                 <div class="tab-pane fade" id="tab2" role="tabpanel">
-                    <h3 class="h3 text-center">Euro</h3>
-                </div>
-
-                <div class="tab-pane fade" id="tab3" role="tabpanel">
-                    <h3 class="h3 text-center">Bitcoin</h3>
+                    <h3 class="h3 text-center text-white">ANÁLISES</h3>
                 </div>
             </div>
 
