@@ -14,6 +14,19 @@ class AwesomeController extends Controller
 
             $event = (new Event)->retornaMoedas($request->moedas);
 
+            return $event;
+
+        }  catch (\Exception $e) {
+    
+        }
+    }
+
+    public function retornaFechamentoDias(Request $request)
+    {
+        try {
+
+            $event = (new Event)->retornaFechamentoDias($request->moeda, $request->numero_dias);
+
             dd($event);
 
         }  catch (\Exception $e) {
