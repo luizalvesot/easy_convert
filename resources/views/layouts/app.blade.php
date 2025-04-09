@@ -10,6 +10,7 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -20,7 +21,7 @@
     <body class="font-sans antialiased">
         <x-banner />
 
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen" style="background-color:rgba(41, 41, 41, 0.925)">
             @livewire('navigation-menu')
 
             <!-- Page Heading -->
@@ -36,10 +37,20 @@
             <main>
                 {{ $slot }}
             </main>
+            <!-- Footer -->
+        <footer class="pt-2 pb-2 border-top">
+            <div>
+                <p class="text-center text-light fw-light">© {{ date('Y') }} Copyright Luiz Alves.</p>
+            </div>
+        </footer>
         </div>
 
+        
+        
         @stack('modals')
 
         @livewireScripts
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
